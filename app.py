@@ -56,8 +56,16 @@ with st.sidebar:
 # --- 4. MAIN HEADER ---
 st.title("🎬 AI-Powered Video Summarizer")
 st.markdown("""
-**Major Project 2026** | Automated Highlights & Intelligent Summarization  
-*Upload a video to extract key insights instantly without watching the whole thing.*
+### 🎬 Turn Long Videos into Concise Highlights
+Welcome to the **AI Video Summarizer**. This tool uses advanced Artificial Intelligence to understand, analyze, and summarize your video content automatically.
+
+**How it works:**
+1.  **Upload** your video file (Lecture, News, or Meeting).
+2.  **AI Analysis:** The system listens to the audio (using OpenAI Whisper) and understands the context.
+3.  **Smart Cutting:** It identifies the most meaningful sentences and cuts out the filler.
+4.  **Download:** Get a fully edited summary video in minutes!
+
+*Built with Python, OpenAI Whisper, and MoviePy.*
 """)
 st.markdown("---")
 
@@ -141,4 +149,5 @@ else:
         2. **Transcription:** **OpenAI Whisper** converts speech to text with timestamps.
         3. **NLP Analysis:** We rank sentences by importance (Summary Mode) or match keywords (Search Mode).
         4. **Video Stitching:** **MoviePy** cuts the original video at those exact timestamps and merges them.
+
         """)
