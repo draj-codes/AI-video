@@ -71,7 +71,7 @@ st.markdown("---")
 
 # --- 5. MAIN CONTENT AREA ---
 # Create a centered upload area
-uploaded_file = st.file_uploader("📂 Drag and drop your video here (MP4, AVI, MOV)", type=["mp4", "mov", "avi"])
+uploaded_file = st.file_uploader("Drag and drop your video here (MP4, AVI, MOV)", type=["mp4", "mov", "avi"])
 
 if uploaded_file is not None:
     # Save temp file
@@ -151,4 +151,5 @@ else:
         4. **Video Stitching:** **MoviePy** cuts the original video at those exact timestamps and merges them.
 
         """)
+
 
